@@ -22,7 +22,7 @@
 <script>
 import color from "@/assets/color";
 
-const randomNum = (minNum,maxNum) => { 
+function randomNum (minNum, maxNum) { 
   // 生成随机数
     switch(arguments.length){ 
         case 1: 
