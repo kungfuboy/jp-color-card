@@ -15,7 +15,7 @@
         <h1>{{getColor.label}}</h1>
         <h3>{{getColor.jp}}</h3>
         <h2 @click="handleCopy(getColor.color)">{{getColor.color}}</h2>
-        <h2 @click="handleCopy(`rgb(${getColor.rgb})`)">RGB: {{getColor.rgb}}</h2>
+        <h2 @click="handleCopy(`rgba(${getColor.rgb}, 1)`)">RGB: {{getColor.rgb}}</h2>
       </div>
       <transition name="fade">
         <span class="tips" v-if="isShowTip">已复制</span>
